@@ -1,3 +1,3 @@
-Ceci est mon journal de bord
+Ceci est mon journal de bord modifié
 
 Il contient : ma carte mentale, mon memo etc...

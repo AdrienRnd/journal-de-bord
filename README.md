@@ -1,0 +1,3 @@
+Ceci est mon journal de bord
+
+Il contient : ma carte mentale, mon memo etc...

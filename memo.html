@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&#x1f680; M&eacute;mo Git Essentiel</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <span id="markdown-mermaid" aria-hidden="true" data-config="{&quot;darkModeTheme&quot;:&quot;vscode&quot;,&quot;lightModeTheme&quot;:&quot;vscode&quot;,&quot;maxTextSize&quot;:50000,&quot;clickDrag&quot;:&quot;alt&quot;,&quot;showControls&quot;:&quot;onHoverOrFocus&quot;,&quot;resizable&quot;:true,&quot;maxHeight&quot;:&quot;&quot;}"></span>
+				<h1 id="-mémo-git-essentiel">🚀 Mémo Git Essentiel</h1>
+<h2 id="1-configuration-initiale">1. Configuration initiale</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Commande</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>git config --global user.name &quot;Nom&quot;</code></td>
+<td style="text-align:left">Définit ton nom d'utilisateur global.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git config --global user.email &quot;email@exemple.com&quot;</code></td>
+<td style="text-align:left">Définit ton adresse e-mail globale.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git config --list</code></td>
+<td style="text-align:left">Affiche toute la configuration actuelle.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="2-démarrer-un-projet">2. Démarrer un projet</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Commande</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>git init</code></td>
+<td style="text-align:left">Initialise un nouveau dépôt Git local.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git clone &lt;url&gt;</code></td>
+<td style="text-align:left">Télécharge un dépôt distant sur ta machine.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="3-cycle-de-base-travail-quotidien">3. Cycle de base (Travail quotidien)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Commande</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>git status</code></td>
+<td style="text-align:left">Vérifie l'état des fichiers (modifiés, suivis, ignorés).</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git add &lt;fichier&gt;</code></td>
+<td style="text-align:left">Ajoute un fichier spécifique à la zone de transit (<em>staging</em>).</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git add .</code></td>
+<td style="text-align:left">Ajoute tous les fichiers modifiés et nouveaux au <em>staging</em>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git commit -m &quot;Message&quot;</code></td>
+<td style="text-align:left">Enregistre les modifications dans l'historique avec un message.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git commit -am &quot;Message&quot;</code></td>
+<td style="text-align:left">Ajoute et commit en une seule fois (fichiers déjà suivis uniquement).</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="4-gestion-des-branches">4. Gestion des branches</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Commande</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>git branch</code></td>
+<td style="text-align:left">Liste toutes les branches locales.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git branch &lt;nom&gt;</code></td>
+<td style="text-align:left">Crée une nouvelle branche.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git switch &lt;nom&gt;</code></td>
+<td style="text-align:left">Bascule sur une branche existante (remplace <code>checkout</code>).</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git switch -c &lt;nom&gt;</code></td>
+<td style="text-align:left">Crée une nouvelle branche et bascule dessus immédiatement.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git merge &lt;branche&gt;</code></td>
+<td style="text-align:left">Fusionne la branche spécifiée dans la branche actuelle.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git branch -d &lt;nom&gt;</code></td>
+<td style="text-align:left">Supprime une branche locale (si déjà fusionnée).</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="5-dépôts-distants-github-gitlab">5. Dépôts distants (GitHub, GitLab...)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Commande</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>git remote -v</code></td>
+<td style="text-align:left">Affiche les dépôts distants liés.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git remote add origin &lt;url&gt;</code></td>
+<td style="text-align:left">Lie le dépôt local à un dépôt distant nommé <code>origin</code>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git pull</code></td>
+<td style="text-align:left">Récupère et fusionne les modifications du dépôt distant.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git push</code></td>
+<td style="text-align:left">Envoie tes commits locaux vers le dépôt distant.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git push -u origin &lt;branche&gt;</code></td>
+<td style="text-align:left">Envoie une nouvelle branche sur le dépôt distant et la lie.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="6-historique--inspection">6. Historique &amp; Inspection</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Commande</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>git log</code></td>
+<td style="text-align:left">Affiche l'historique complet des commits.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git log --oneline --graph</code></td>
+<td style="text-align:left">Affiche un historique condensé avec l'arbre des branches.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git diff</code></td>
+<td style="text-align:left">Montre les modifications non encore ajoutées au <em>staging</em>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git diff --staged</code></td>
+<td style="text-align:left">Montre les modifications prêtes à être commitées.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="7-annuler--réparer-urgences">7. Annuler &amp; Réparer (Urgences)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Commande</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>git restore &lt;fichier&gt;</code></td>
+<td style="text-align:left">Annule les modifications locales d'un fichier non stagé.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git restore --staged &lt;fichier&gt;</code></td>
+<td style="text-align:left">Retire un fichier de la zone de <em>staging</em> (garde les modifs).</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git commit --amend -m &quot;Nouveau&quot;</code></td>
+<td style="text-align:left">Modifie le message (ou le contenu) du dernier commit.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git revert &lt;id-commit&gt;</code></td>
+<td style="text-align:left">Crée un nouveau commit qui annule proprement un commit passé.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git reset --hard &lt;id-commit&gt;</code></td>
+<td style="text-align:left">⚠️ <strong>Destructif</strong> : revient à un commit précis et efface tout après.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="8-mise-de-côté-temporaire-stash">8. Mise de côté temporaire (Stash)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Commande</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>git stash</code></td>
+<td style="text-align:left">Sauvegarde temporairement les modifications non commitées.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git stash pop</code></td>
+<td style="text-align:left">Réapplique les dernières modifications mises de côté et les supprime du stash.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git stash list</code></td>
+<td style="text-align:left">Liste toutes les sauvegardes temporaires.</td>
+</tr>
+<tr>
+<td style="text-align:left">Utilisez le code avec précaution.</td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+
+            
+            
+        </body>
+        </html>
